@@ -6,14 +6,13 @@
     <title>Calculadora</title>
     <style>
         body{
-            background-image: linear-gradient(80deg, black, red);
+            background-color:aqua;
         }
         *{
             margin: 0%;
             padding: 0%;
         }
         .fundo {
-            background-image: linear-gradient(45deg, black, red);
             height: 100%;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +38,7 @@
             color: white;
         }
         .botao:hover{
-            background-color: rgb(255, 0, 0);
+            background-color:rgba(0, 255, 255, 0.719);
         }
         #resultado{
             background-color: white;
@@ -51,11 +50,7 @@
             text-align: right;
             padding: 5px;
         }
-        .spider{ 
-            height: 127px;
-            margin-left: 0%;
-            margin-top: -10px;
-        }
+       
 
      @font-face {
             font-family: minha fonte;
@@ -66,6 +61,17 @@
             font-family: minha fonte;
             margin-top: 407px;
             background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
+        }
+
+        footer {
+            font-family: monospace;
+            font-size: 20px;
+            padding: 10px;
+            color: black;
+        }
+        a {
+            color: rgba(255, 255, 255, 0.897);
+            text-decoration: none;
         }
     </style>
 </head>
@@ -107,7 +113,6 @@
       </table>
       </div>
   </div>
-  <img class="spider" src="foto-spider.png" alt="">
   
   <script>
     function insert(num)
@@ -133,5 +138,6 @@
     }
     }
   </script>
+  <footer><p>Calculadora criado pelo <a href="https://github.com/PabloG-7">Pablo Gomes</a></p></footer>
 </body>
 </html>
