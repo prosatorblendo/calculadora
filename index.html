@@ -4,76 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        body{
-            background-color:aqua;
-        }
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
-        .fundo {
-            height: 100%;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        .calculadora {
-            position: absolute;
-            background-color: rgba(0, 0, 0,1);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            border-radius: 15px;
-            padding: 15px;
-        }
-        .botao{
-            width: 50px;
-            height: 50px;
-            margin: 3px;
-            font-size: 25px;
-            cursor: pointer;
-            background-color: rgb(31,31,31);
-            border: none;
-            color: white;
-        }
-        .botao:hover{
-            background-color:rgba(0, 255, 255, 0.719);
-        }
-        #resultado{
-            background-color: white;
-            width: 207px;
-            height: 30px;
-            margin: 5px;
-            font-size: 25px;
-            color: black;
-            text-align: right;
-            padding: 5px;
-        }
-       
-
-     @font-face {
-            font-family: minha fonte;
-            src: url('spider.TTF');
-
-        }
-        .pablo{
-            font-family: minha fonte;
-            margin-top: 407px;
-            background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 0));
-        }
-
-        footer {
-            font-family: monospace;
-            font-size: 2.9vh;
-            padding: 10px;
-            color: black;
-        }
-        a {
-            color: rgba(255, 255, 255, 0.897);
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="fundo">
@@ -114,30 +45,8 @@
       </div>
   </div>
   
-  <script>
-    function insert(num)
-    {
- var numero = document.getElementById('resultado').innerHTML;
- document.getElementById('resultado').innerHTML = numero + num;
-    }
-    function clean()
-    {
-        document.getElementById('resultado').innerText = "";
-    }
-    function back()
-    {
-        var resultado = document.getElementById('resultado').innerHTML;
-        document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
-    }
-    function calcular()
-    {
-        var resultado = document.getElementById('resultado').innerHTML;
-        if(resultado)
-    {
-        document.getElementById('resultado').innerHTML = eval(resultado);
-    }
-    }
-  </script>
+  <script src="index.js"></script>
+
   <footer><p>Calculadora criado pelo <a href="https://github.com/PabloG-7"><strong>Pablo Gomes</strong></a></p></footer>
 </body>
 </html>
