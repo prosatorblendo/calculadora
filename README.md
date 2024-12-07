@@ -1,4 +1,4 @@
-# Calculadora Pablo
+# Calculadora Web
 
 Este projeto é uma calculadora simples, desenvolvida para praticar conceitos de **HTML**, **CSS** e **JavaScript**.
 
